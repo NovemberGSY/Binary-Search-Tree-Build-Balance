@@ -1,0 +1,110 @@
+I 120        // Tree #1 – root = 120 - keep this tree balanced – only includes insertion, display, and erase transactions
+I 320        // right child of root
+I 385        // Node 120 (root) no longer balanced – AVL Algorithm Case 4 rebalancing, single rotate left
+I 192        // right child of 120
+I 625        // right child of node 385 
+I  86         // left child of 120
+I  43
+I  32          // Node 86 now out of balance – AVL Case 1 rebalancing (single rotate right)
+I 745        // Node 385 unbalanced, AVL Case 4 rebalancing (rotate left)
+I 890         
+I 150
+I  20          
+I  26        // Node 32 unbalanced – Case 2 – 2 rotations 
+I 800        // Node 745 unbalanced – Case 3 - 2 rotations 
+D            // Display current state of tree  - no comments on next nine transactions  
+I  90
+I  28        
+I  95       
+I 160       
+I 370
+I 380       
+I 900
+I 895       
+I 100       
+D             // Display resulting tree after applying the above transactions
+E              // Erase and start a new tree 
+I  400      // Tree #2 – Build only, don’t need to balance**********
+I  640
+I  522
+I  809
+I  185
+I  212
+I  91
+I  140
+I  313
+I  290
+I  912
+F  212
+F  809
+F  908    //               ??
+I  201  
+I  585
+I  43
+I  620
+I  545
+I  393
+F  212
+R  212
+F  290
+F  212   //     !?
+F  201
+I  300
+D
+E                //  Erase Tree, start next 
+I 280         //  Tree #3 – Build only – don’t need to balance 
+I 340
+I 400
+I 443
+I 619
+I 187
+I 123
+I 228
+I 432
+I  99
+I 111
+I 108
+I 145
+I 175
+I 163   // Yup
+I 411
+I 421
+I 393
+I 155
+I 159   // OK
+F 163
+I 167
+I 404
+I 407
+I 157
+I 155      // Uh oh.
+F 421
+R 443
+R 394    //  ????
+F 411
+F 443    // wth?
+F 153     //  donde es?
+F 109    // she’s not there
+R 443    //  no can do
+I 443
+F 443
+I 443     //  already did it!
+R 163
+I 163
+F 407
+I 371
+I 620
+I 384
+I 352
+I 640
+I 660
+I 680
+I 700
+I 720
+F 680
+R 660
+F 660    // see previous transaction
+F 720
+D
+
+
